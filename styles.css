@@ -1,0 +1,97 @@
+body {
+    background-image: url("images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+form, #submit, #reset {
+                       font-size:30px;
+                     }
+
+ .about, .form-data {
+                    display: grid;
+                    padding: 30px;
+                    font-size:30px;
+                    }
+
+ .form-data, .about {
+                display: grid;
+                grid-template-columns:auto auto;
+                margin:auto;
+                width:90%;
+                }
+
+ .grid-container {
+                  display: grid;
+                  grid-template-columns:40% 50%;                
+                  }
+ @media screen and (max-width: 800px){
+                                     .grid-container
+                                      {display:block;}}
+
+
+                                      @media screen and (max-width: 1200px){
+                                        .about, .form-data
+                                         {display:block;}}
+
+                
+
+    
+.grid-container > div :hover {
+                             opacity:0.8;
+                            }     
+
+#footer {
+        bottom: 0%;
+        position: fixed;
+         }
+
+
+input:focus, select:focus {
+                            font-size: 30px;
+                         }
+
+#links:hover{
+            opacity:0.8; 
+            }
+
+#image1{
+  font-size: 40px;
+  text-align: justify;
+  margin:20px;
+  margin-top: 60px;
+}
+
+#image {
+  margin-top: 60px;
+}
+
+
+#navig {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+@media screen and (max-width: 800px){
+  li
+   {clear:both;}}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+li a:hover {
+  background-color: #111;
+}

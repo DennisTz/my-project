@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<title>Register your booking</title>
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo.jpg" style="float:left; opacity: 0.3" width=300 height=200>
+        <h1 style="font-size: 60px; color: grey;font-family: Papyrus"> Welcome to Travel Experts</h1>
+        <p style="clear:both;"></p>
+        <ul id="navig">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="register.html">Book Your Trip</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </header>
+    <main>
+        <div class="form-data">
+            <div>
+            <h2>Customer Information</h2>
+            <form action="bouncer.php" method="GET">
+                <table>
+                    <tr><td>Name * </td> <td><input type="text“ name="name" size="40" placeholder="First and last name" required/></td></tr>
+                    <tr><td>Address * </td> <td><input type="text“ name="address" size="40" placeholder="Address" required/></td></tr>
+                    <tr><td>City * </td> <td><input type="text“ name="city" size="40" placeholder="City" required/></td></tr>
+                    <tr><td>Province * </td> <td><input type="text“ name="province" size="40" placeholder="Province" required/></td></tr>
+                    <tr><td>Postal Code * </td> <td> <input type="text" id="country_code" name="country_code" pattern="^[A-Z]\d[A-Z] ?\d[A-Z]\d$" 
+                    title="6 character postal code format" size="40" placeholder="Postal Code" required/></td></tr>
+                    <tr><td>E-mail * </td> <td><input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" size="40" 
+                    placeholder="Email" required/></td></tr>
+                </table>
+                Where did you hear about us? </td> <td><select name="feedback" >
+                                                            <option value="internet">Internet</option>
+                                                            <option value="friends">Friends</option>
+                                                            <option value="other">Other</option>	
+                                                        </select>
+                
+                <br/><b>Product of Interest</b><br/>
+                <input type="checkbox" name="product1"  checked> Europe<br/>
+                <input type="checkbox" name="product2" > Asia <br/>
+                <input type="checkbox" name="product3" > Africa <br/>
+                <input type="checkbox" name="product4" > Australia <br/>
+                <input type="submit" onclick="return confirm('Are you sure?')"value="Submit" id="submit" /> 
+                <input type="reset" onclick="return confirm('Are you sure?')" value="Reset" id="reset"/>
+            </form>
+
+            <h2>Quiz of the week</h2>
+            <p>What is the most popular vacation destination?</p>
+            <form>
+                <button style="font-size: 30px;"  onclick="alert('Not quite...')">Astralia</button></br>
+                <button style="font-size: 30px;" onclick="alert('Not quite...')">Europe</button></br>
+                <button style="font-size: 30px;" onclick="alert('Correct!')">Africa</button></br>
+                <button style="font-size: 30px;" onclick="alert('Not quite...')">America</button></p>
+            </form>
+            </div>
+            <div>
+                <img  style="width: 100%; height: 850px;" src="images/munich.jpg" id="image">
+            </div>
+    </main>
+    <footer>
+        <p id="footer">&copy All rights reserved</p>
+    </footer>
+</body>
+</html> 
